@@ -10,6 +10,19 @@ export default function PrivacyPage() {
   return (
     <main className="mx-auto w-full max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
       <header className="mb-10 sm:mb-12">
+        <Link href="/" className="mb-6 flex items-center gap-2 text-gray-600 hover:text-black">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            aria-hidden="true"
+          >
+            <path d="M15 18 9 12l6-6" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          Back to Home
+        </Link>
         <h1 className="text-4xl font-semibold tracking-tight text-stone-900 sm:text-5xl">Privacy Policy</h1>
       </header>
 
@@ -79,11 +92,6 @@ export default function PrivacyPage() {
         </section>
       </div>
 
-      <div className="mt-12 border-t border-stone-200 pt-6">
-        <Link href="/" className="text-sm font-medium text-stone-800 transition-colors hover:text-stone-950">
-          Back to Home
-        </Link>
-      </div>
     </main>
   );
 }

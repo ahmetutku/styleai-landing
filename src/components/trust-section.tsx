@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Reveal } from "./reveal";
 
 export function TrustSection() {
@@ -14,6 +15,12 @@ export function TrustSection() {
             <p className="mt-4 text-lg leading-relaxed text-stone-600">
               Sign in uses secure authentication. You can edit or remove your closet data at any time, and we keep language clear so you always know what is saved.
             </p>
+            <Link
+              href="/privacy"
+              className="mt-6 inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 text-sm font-medium text-stone-800 transition hover:bg-stone-100"
+            >
+              Learn more about privacy
+            </Link>
           </article>
         </Reveal>
 
