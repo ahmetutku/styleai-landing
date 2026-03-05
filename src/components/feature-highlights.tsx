@@ -29,7 +29,7 @@ const features: Feature[] = [
 
 export function FeatureHighlights() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-5 py-22 sm:px-8" aria-label="Feature highlights">
+    <section className="mx-auto w-full max-w-6xl px-5 py-24 sm:px-8" aria-label="Feature highlights">
       <Reveal>
         <h2 className="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">Feature Highlights</h2>
       </Reveal>
