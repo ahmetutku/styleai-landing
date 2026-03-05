@@ -10,7 +10,7 @@ export default function PrivacyPage() {
   return (
     <main className="mx-auto w-full max-w-3xl px-5 py-16 sm:px-8 sm:py-20">
       <header className="mb-10 sm:mb-12">
-        <Link href="/" className="mb-6 flex items-center gap-2 text-gray-600 hover:text-black">
+        <Link href="/" scroll className="mb-6 flex items-center gap-2 text-gray-600 hover:text-black">
           <svg
             viewBox="0 0 24 24"
             className="h-4 w-4"
