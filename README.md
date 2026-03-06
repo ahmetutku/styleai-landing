@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Live Website
+
+The StyleAI landing page can be accessed here:
+
+https://getstyleai.vercel.app/
+
+This site showcases the product overview, features, and download link for the StyleAI iPhone app.
+
 ## Getting Started
 
 First, run the development server:
