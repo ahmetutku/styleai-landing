@@ -4,7 +4,7 @@ const stats = ["3.2k waitlist", "89% weekly return", "4.9/5 early rating"];
 
 export function SocialProof() {
   return (
-    <Reveal className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8" id="demo">
+    <Reveal className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 md:py-14" id="demo">
       <section className="rounded-3xl border border-stone-200 bg-white/65 px-6 py-7 backdrop-blur-sm sm:px-10" aria-label="Social proof">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <p className="text-sm font-medium uppercase tracking-[0.16em] text-stone-500">Trusted by early users</p>

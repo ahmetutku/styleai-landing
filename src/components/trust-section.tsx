@@ -3,7 +3,7 @@ import { Reveal } from "./reveal";
 
 export function TrustSection() {
   return (
-    <section id="trust" className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8">
+    <section id="trust" className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 md:py-24">
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <Reveal>
           <article className="rounded-3xl border border-stone-200 bg-white/70 p-8 sm:p-10">

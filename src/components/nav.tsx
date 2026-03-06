@@ -8,7 +8,7 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200/60 bg-[rgba(250,247,241,0.82)] backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-stone-200/60 bg-[rgba(250,247,241,0.95)] md:bg-[rgba(250,247,241,0.82)] md:backdrop-blur-md">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4" aria-label="Main navigation">
         <div className="flex flex-1 items-center">
           <Link href="#top" className="text-lg font-semibold tracking-tight text-stone-900">
@@ -16,7 +16,7 @@ export function Nav() {
           </Link>
         </div>
 
-        <ul className="flex flex-1 items-center justify-center gap-8 text-sm text-stone-700 whitespace-nowrap">
+        <ul className="hidden flex-1 items-center justify-center gap-8 whitespace-nowrap text-sm text-stone-700 md:flex">
           {links.map((link) => (
             <li key={link.href}>
               <Link href={link.href} className="transition-colors hover:text-stone-900">
@@ -29,9 +29,9 @@ export function Nav() {
         <div className="flex flex-1 items-center justify-end">
           <a
             href="https://apps.apple.com/us/app/styleai-fashion-assistant/id6744303536"
-            className="rounded-full bg-stone-900 px-4 py-2 text-sm font-medium text-stone-50 transition-transform duration-200 hover:-translate-y-0.5"
+            className="rounded-full bg-stone-900 px-5 py-2.5 text-sm font-medium text-stone-50 transition-transform duration-200 hover:-translate-y-0.5 md:px-6 md:py-3 md:text-base"
           >
-            Download for iPhone
+            Download for iOS
           </a>
         </div>
       </nav>

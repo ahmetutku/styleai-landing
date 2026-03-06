@@ -36,7 +36,7 @@ export function FAQAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="mx-auto w-full max-w-4xl px-5 py-24 sm:px-8" aria-labelledby="faq-title">
+    <section id="faq" className="mx-auto w-full max-w-4xl px-5 py-20 sm:px-8 md:py-24" aria-labelledby="faq-title">
       <Reveal>
         <h2 id="faq-title" className="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           Frequently Asked Questions
