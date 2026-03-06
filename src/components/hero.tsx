@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "./reveal";
 
 export function Hero() {
@@ -32,22 +33,15 @@ export function Hero() {
       </Reveal>
 
       <Reveal delay={0.12} className="mx-auto w-full max-w-sm">
-        <div className="rounded-[2.25rem] border border-stone-300/70 bg-stone-200/30 p-3 shadow-[0_20px_80px_-35px_rgba(65,56,45,0.55)]">
-          <div className="aspect-[9/16] rounded-[1.85rem] border border-stone-300/80 bg-gradient-to-b from-[#f2ece2] to-[#ded4c7] p-4">
-            <div className="flex h-full flex-col rounded-[1.45rem] border border-stone-300/70 bg-white/70 p-4">
-              <div className="mx-auto mb-4 h-1.5 w-16 rounded-full bg-stone-300" />
-              <div className="mb-4 h-24 rounded-2xl bg-stone-200/80" />
-              <div className="mb-3 h-4 w-3/4 rounded-full bg-stone-300/90" />
-              <div className="mb-6 h-4 w-1/2 rounded-full bg-stone-200/90" />
-              <div className="grid grid-cols-2 gap-3">
-                <div className="aspect-square rounded-xl bg-stone-200/90" />
-                <div className="aspect-square rounded-xl bg-stone-100" />
-                <div className="aspect-square rounded-xl bg-stone-100" />
-                <div className="aspect-square rounded-xl bg-stone-200/90" />
-              </div>
-              <p className="mt-auto text-center text-xs font-medium text-stone-500">iPhone app preview placeholder</p>
-            </div>
-          </div>
+        <div className="max-w-[420px] mx-auto">
+          <Image
+            src="/images/aioutfit.png"
+            alt="StyleAI outfit recommendations"
+            width={1200}
+            height={2400}
+            className="w-full h-auto drop-shadow-2xl"
+            priority
+          />
         </div>
       </Reveal>
     </section>

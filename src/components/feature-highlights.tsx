@@ -1,9 +1,12 @@
+import Image from "next/image";
 import { Reveal } from "./reveal";
 
 type Feature = {
   title: string;
   description: string;
   label: string;
+  imageSrc: string;
+  imageAlt: string;
 };
 
 const features: Feature[] = [
@@ -12,18 +15,24 @@ const features: Feature[] = [
     title: "Outfits generated from your real closet",
     description:
       "Your suggestions come from the pieces you already own, balanced by weather, occasion, and your personal taste.",
+    imageSrc: "/images/closetview.png",
+    imageAlt: "StyleAI closet grid view",
   },
   {
     label: "Smart Planning",
     title: "Plan a week of outfits in minutes",
     description:
       "Build calm mornings with pre-planned looks for work, events, and travel, with quick swaps when plans shift.",
+    imageSrc: "/images/createyouroutfit.png",
+    imageAlt: "StyleAI outfit builder categories",
   },
   {
     label: "Style Memory",
     title: "Learns what you wear and love",
     description:
       "StyleAI improves over time by remembering your favorite combinations and avoiding items you skip.",
+    imageSrc: "/images/aiscreen.png",
+    imageAlt: "StyleAI learning style preferences",
   },
 ];
 
@@ -46,19 +55,14 @@ export function FeatureHighlights() {
               </Reveal>
 
               <Reveal delay={0.1}>
-                <div className="mx-auto w-full max-w-md rounded-3xl border border-stone-300/70 bg-stone-100/70 p-3">
-                  <div className="aspect-[9/16] rounded-2xl border border-stone-300/70 bg-gradient-to-b from-stone-50 to-stone-200 p-4">
-                    <div className="h-full rounded-xl border border-stone-200 bg-white/70 p-4">
-                      <div className="h-4 w-1/2 rounded-full bg-stone-200" />
-                      <div className="mt-3 h-4 w-2/3 rounded-full bg-stone-100" />
-                      <div className="mt-6 grid grid-cols-2 gap-3">
-                        <div className="aspect-square rounded-lg bg-stone-200" />
-                        <div className="aspect-square rounded-lg bg-stone-300" />
-                        <div className="aspect-square rounded-lg bg-stone-300" />
-                        <div className="aspect-square rounded-lg bg-stone-200" />
-                      </div>
-                    </div>
-                  </div>
+                <div className="max-w-[420px] mx-auto">
+                  <Image
+                    src={feature.imageSrc}
+                    alt={feature.imageAlt}
+                    width={1200}
+                    height={2400}
+                    className="w-full h-auto drop-shadow-2xl"
+                  />
                 </div>
               </Reveal>
             </div>
